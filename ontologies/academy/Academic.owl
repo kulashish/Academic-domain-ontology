@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/1/Ontology1330330892696.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2012/1/Ontology1330330892696.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="Electrical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file:/C:/Documents%20and%20Settings/user/Desktop/IIT%20Courses/Seminar/university.owl#Computer_Science_and_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#AdministrativeStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#AssistantProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#AssociateProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Booklet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#DevelopmentProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#FullProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Graduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#InBook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#InCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#InProceedings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#MasterThesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Misc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDThesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Proceedings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#ProjectMeeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#ProjectReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#SoftwareProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#TechnicalStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Thesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Undergraduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Unpublished"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://swrc.ontoware.org/ontology#Workshop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_Administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_degrees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Bachelor_of_technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Bachelors_degrees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Masters_degrees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Researcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#Root"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#RootRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#affiliation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#atEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriesOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#cite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#citedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#cooperateWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#dealtWithIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#describesProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#developedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#develops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#employs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#financedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#finances"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#givenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#hasPartEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#hasParts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#head"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#headOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#headOfGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#institution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#isAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#isWorkedOnBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#memberOfPC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#organizerOrChairOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#product"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#projectInfo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#school"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#studiesAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#technicalReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#worksAtProject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#abstract"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#booktitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#chapter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#edition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#eventTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#fax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#homepage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#howpublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#isbn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#journal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#keywords"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#month"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#note"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#pages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#photo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#series"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://swrc.ontoware.org/ontology#year"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Electrical"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file:/C:/Documents%20and%20Settings/user/Desktop/IIT%20Courses/Seminar/university.owl#Computer_Science_and_Engineering"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#cooperateWith"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#headOf"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#memberOfPC"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#organizerOrChairOf"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publication"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervises"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#worksAtProject"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AdministrativeStaff"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Article"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Article"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AssistantProfessor"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#AssociateProfessor"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Book"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Book"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Book"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Booklet"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Booklet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Conference"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#DevelopmentProject"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#atEvent"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#hasPartEvent"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#FullProfessor"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Graduate"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InBook"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InBook"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InBook"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InCollection"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InProceedings"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InProceedings"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#InProceedings"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Lecture"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Lecture"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#givenBy"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Manual"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Manual"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#MasterThesis"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Thesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Meeting"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Meeting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#participant"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Misc"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Graduate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publication"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervisor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#worksAtProject"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#PhDThesis"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Thesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Proceedings"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#editor"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#head"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#isAbout"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#member"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#projectInfo"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ProjectMeeting"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Meeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ProjectReport"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ProjectReport"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#describesProject"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#cite"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Report"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Report"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchProject"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#dealtWithIn"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#isWorkedOnBy"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#AcademicStaff"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#SoftwareProject"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#DevelopmentProject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Student"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#TechnicalStaff"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Thesis"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Thesis"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Undergraduate"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Unpublished"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Unpublished"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://swrc.ontoware.org/ontology#author"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Workshop"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_Administration"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_degrees"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Bachelor_of_technology"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Bachelors_degrees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Bachelors_degrees"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_degrees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Course"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Education"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Masters_degrees"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_degrees"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Researcher"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+    </SubClassOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#employs"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#affiliation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#atEvent"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#hasPartEvent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriedOutBy"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriesOut"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#citedBy"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#cite"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#describesProject"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#projectInfo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#developedBy"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#develops"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#head"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#headOfGroup"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publisher"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#publishes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervises"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#supervisor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#citedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
