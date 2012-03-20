@@ -11,18 +11,16 @@
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/ontologies/2012/1/Ontology1330330892696.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ontologies/2012/1/Ontology1330330892696.owl">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Declaration>
-        <Class IRI="Electrical"/>
-    </Declaration>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="file:/C:/Documents%20and%20Settings/user/Desktop/IIT%20Courses/Seminar/university.owl#Computer_Science_and_Engineering"/>
     </Declaration>
@@ -177,10 +175,43 @@
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Researcher"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Electrical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseId"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Electrical"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#Gandhian_Innovation_Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mentor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newsletter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project_Title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#S2I_Contest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tattarillo_Award"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Thing"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#Root"/>
@@ -315,6 +346,24 @@
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#worksAtProject"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAwardContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAwardGuideline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAwardNomination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProjectGuide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTelephone"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://swrc.ontoware.org/ontology#abstract"/>
     </Declaration>
     <Declaration>
@@ -404,10 +453,9 @@
     <Declaration>
         <DataProperty IRI="http://swrc.ontoware.org/ontology#year"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="Electrical"/>
-        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
-    </SubClassOf>
+    <Declaration>
+        <DataProperty IRI="#ranking"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="file:/C:/Documents%20and%20Settings/user/Desktop/IIT%20Courses/Seminar/university.owl#Computer_Science_and_Engineering"/>
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
@@ -662,6 +710,27 @@
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://swrc.ontoware.org/ontology#email"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://swrc.ontoware.org/ontology#name"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="http://swrc.ontoware.org/ontology#phone"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://swrc.ontoware.org/ontology#PhDStudent"/>
         <Class IRI="http://swrc.ontoware.org/ontology#Graduate"/>
     </SubClassOf>
@@ -732,6 +801,20 @@
             <ObjectProperty IRI="http://swrc.ontoware.org/ontology#projectInfo"/>
             <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasProjectGuide"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://swrc.ontoware.org/ontology#Project"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#ranking"/>
+            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://swrc.ontoware.org/ontology#ProjectMeeting"/>
@@ -868,7 +951,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Education"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Masters_degrees"/>
@@ -879,20 +962,81 @@
         <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Electrical"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Abstract"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAwardContact"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAwardGuideline"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Manual"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAwardNomination"/>
+            <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blog"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseId"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Electrical"/>
         <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academic_department"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gandhian_Innovation_Award"/>
+        <Class IRI="#Award"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mentor"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newsletter"/>
+        <Class IRI="http://swrc.ontoware.org/ontology#Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project_Title"/>
+        <Class IRI="http://www.semanticweb.org/ontologies/2011/1/academy.owl#Academia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#S2I_Contest"/>
+        <Class IRI="#Award"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tattarillo_Award"/>
+        <Class IRI="#Award"/>
+    </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#employs"/>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#affiliation"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#employs"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#atEvent"/>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#hasPartEvent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriedOutBy"/>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriesOut"/>
+        <ObjectProperty IRI="http://swrc.ontoware.org/ontology#carriedOutBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#citedBy"/>
@@ -920,7 +1064,7 @@
     </InverseObjectProperties>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://swrc.ontoware.org/ontology#citedBy"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </ObjectPropertyRange>
 </Ontology>
 
